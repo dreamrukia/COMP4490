@@ -7,14 +7,17 @@ public class move : MonoBehaviour {
 	public float movementSpeed = 1.0f;
 	public float screenScale = 16.0f/9.0f;
 	public float speed = 100;
+	public float jumpVelocity;
+	public float boundDistance;
 
-	GameObject skybox;
+	public GameObject skybox;
 	// Use this for initialization
 	void Start () {
-		skybox = GameObject.Find ("Skyball_WithCap");
+		//skybox = GameObject.Find ("Skyball_WithCap");
 //		skybox.transform.eulerAngles = Vector3.zero;
         if (GetComponent<Rigidbody>())
             GetComponent<Rigidbody>().freezeRotation = true;
+		boundDistance = GetComponent<Collider> ().bounds.extents.y;
     }
 	
 	// Update is called once per frame
@@ -26,34 +29,39 @@ public class move : MonoBehaviour {
 
     void movement()
     {
-//        if (Input.GetKey(KeyCode.W))
-//        {
-//            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + movementSpeed );
-//        }
-//        if (Input.GetKey(KeyCode.S))
-//        {
-//            transform.position = new Vector3(transform.position.x , transform.position.y, transform.position.z - movementSpeed );
-//        }
-//        if (Input.GetKey(KeyCode.D))
-//        {
-//            transform.position = new Vector3(transform.position.x + movementSpeed * screenScale, transform.position.y, transform.position.z);
-//        }
-//        if (Input.GetKey(KeyCode.A))
-//        {
-//            transform.position = new Vector3(transform.position.x - movementSpeed * screenScale, transform.position.y, transform.position.z );
-//        }
-		Camera cam = GameObject.Find("Camera").GetComponent<Camera>();
-				Vector3 face = cam.transform.forward;
-				face.y = 0.0f;
-				Rigidbody rb = GetComponent<Rigidbody> ();
 
+		Camera cam = GameObject.Find("Camera").GetComponent<Camera>();
+		Vector3 face = cam.transform.forward;
+		Vector3 camUp = cam.transform.up;
+		face.y = 0.0f;
+		Rigidbody rb = GetComponent<Rigidbody> ();
+		skybox.GetComponent<Transform> ().position = cam.GetComponent<Transform>().position;
 				
 		if (Input.GetKey (KeyCode.W)) {
-			rb.AddForce (face * speed);
-		} else if (Input.GetKey (KeyCode.S)) {
-			rb.AddForce (-face * speed);
+			GetComponent<Transform> ().position += face * speed;
+			//rb.AddForce (face * speed);
+		} 
+		if (Input.GetKey (KeyCode.S)) {
+			GetComponent<Transform> ().position -= face * speed;
+			//rb.AddForce (-face * speed);
+		} 
+		if (Input.GetKey (KeyCode.A)) {
+			Vector3 moveDir = Vector3.Cross (face, camUp).normalized * speed;
+			GetComponent<Transform> ().position += moveDir;
 		}
+		if (Input.GetKey (KeyCode.D)) {
+			Vector3 moveDir = Vector3.Cross (camUp, face).normalized * speed;
+			GetComponent<Transform> ().position += moveDir;
+		}
+		if (Input.GetKeyDown (KeyCode.Space) && Mathf.Abs (rb.velocity.y) <= 0.1) {
+			rb.velocity = new Vector3 (0, jumpVelocity, 0);
+		}
+
     }
 
+//	bool onGround(){
+//		return Physics.Raycast (transform.position, -Vector3.up, boundDistance + 0.3);
+//			
+//	}
 
 }
