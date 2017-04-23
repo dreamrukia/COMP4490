@@ -38,23 +38,41 @@ public class move : MonoBehaviour {
 		skybox.GetComponent<Transform> ().position = cam.GetComponent<Transform>().position;
 				
 		if (Input.GetKey (KeyCode.W)) {
-			GetComponent<Transform> ().position += face * speed;
+			rb.velocity += face * speed;
+
 			//rb.AddForce (face * speed);
 		} 
 		if (Input.GetKey (KeyCode.S)) {
-			GetComponent<Transform> ().position -= face * speed;
+			rb.velocity += -face * speed;
 			//rb.AddForce (-face * speed);
 		} 
 		if (Input.GetKey (KeyCode.A)) {
 			Vector3 moveDir = Vector3.Cross (face, camUp).normalized * speed;
-			GetComponent<Transform> ().position += moveDir;
+			rb.velocity += moveDir;
 		}
 		if (Input.GetKey (KeyCode.D)) {
 			Vector3 moveDir = Vector3.Cross (camUp, face).normalized * speed;
-			GetComponent<Transform> ().position += moveDir;
+			rb.velocity += moveDir;
 		}
 		if (Input.GetKeyDown (KeyCode.Space) && Mathf.Abs (rb.velocity.y) <= 0.1) {
 			rb.velocity = new Vector3 (0, jumpVelocity, 0);
+		}
+
+		if (Input.GetKeyUp (KeyCode.W)) {
+			rb.velocity -= face * speed;
+			//rb.AddForce (face * speed);
+		} 
+		if (Input.GetKeyUp (KeyCode.S)) {
+			rb.velocity -= -face * speed;
+			//rb.AddForce (-face * speed);
+		} 
+		if (Input.GetKeyUp (KeyCode.A)) {
+			Vector3 moveDir = Vector3.Cross (face, camUp).normalized * speed;
+			rb.velocity -= moveDir;
+		}
+		if (Input.GetKeyUp (KeyCode.D)) {
+			Vector3 moveDir = Vector3.Cross (camUp, face).normalized * speed;
+			rb.velocity -= moveDir;
 		}
 
     }
