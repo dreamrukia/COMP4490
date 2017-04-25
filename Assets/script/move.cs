@@ -21,7 +21,7 @@ public class move : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		//print (cam.transform.position);
 
         movement();
@@ -36,48 +36,47 @@ public class move : MonoBehaviour {
 		face.y = 0.0f;
 		Rigidbody rb = GetComponent<Rigidbody> ();
 		skybox.GetComponent<Transform> ().position = cam.GetComponent<Transform>().position;
-				
-		if (Input.GetKey (KeyCode.W)) {
-			rb.velocity += face * speed;
+        //print(canMove(face));
+		if (Input.GetKey (KeyCode.W) && canMove(face)) {
+			rb.position += face * speed;
 
 			//rb.AddForce (face * speed);
 		} 
-		if (Input.GetKey (KeyCode.S)) {
-			rb.velocity += -face * speed;
+		if (Input.GetKey (KeyCode.S) && canMove(-face)) {
+			rb.position += -face * speed;
 			//rb.AddForce (-face * speed);
 		} 
 		if (Input.GetKey (KeyCode.A)) {
 			Vector3 moveDir = Vector3.Cross (face, camUp).normalized * speed;
-			rb.velocity += moveDir;
+            if (canMove(moveDir))
+            {
+                rb.position += moveDir;
+            }
 		}
-		if (Input.GetKey (KeyCode.D)) {
+		if (Input.GetKey (KeyCode.D) && canMove(face)) {
 			Vector3 moveDir = Vector3.Cross (camUp, face).normalized * speed;
-			rb.velocity += moveDir;
-		}
-		if (Input.GetKeyDown (KeyCode.Space) && Mathf.Abs (rb.velocity.y) <= 0.1) {
+            if (canMove(moveDir))
+            {
+                rb.position += moveDir;
+            }
+        }
+        //print(onGround());
+		if (Input.GetKeyDown (KeyCode.Space) && onGround()) {
 			rb.velocity = new Vector3 (0, jumpVelocity, 0);
 		}
-
-		if (Input.GetKeyUp (KeyCode.W)) {
-			rb.velocity = new Vector3 (0, 0, 0);
-			//rb.AddForce (face * speed);
-		} 
-		if (Input.GetKeyUp (KeyCode.S)) {
-			rb.velocity = new Vector3 (0, 0, 0);
-			//rb.AddForce (-face * speed);
-		} 
-		if (Input.GetKeyUp (KeyCode.A)) {
-			rb.velocity = new Vector3 (0, 0, 0);
-		}
-		if (Input.GetKeyUp (KeyCode.D)) {
-			rb.velocity = new Vector3 (0, 0, 0);
-		}
+        //if (onGround())
+        //{
+        //    rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+        //}
 
     }
 
-//	bool onGround(){
-//		return Physics.Raycast (transform.position, -Vector3.up, boundDistance + 0.3);
-//			
-//	}
+    bool canMove(Vector3 direction)
+    {
+        return !(Physics.Raycast(transform.position+new Vector3(0,5,0), direction.normalized, speed + 10f));
+    }
+	bool onGround(){
+		return Physics.Raycast (transform.position, -Vector3.up, boundDistance + 0.3f);
+	}
 
 }
