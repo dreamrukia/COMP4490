@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class weapon : MonoBehaviour {
     public GameObject wpPrefab;
-<<<<<<< HEAD
 	GameObject wpParticleSys;
-=======
 	public GameObject bulletPrefab;
 	List<GameObject> bullet;
->>>>>>> origin/master
     GameObject wp;
     public bool changeWp;
     public Vector3 wpPosition;
@@ -35,40 +32,26 @@ public class weapon : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-<<<<<<< HEAD
 		wpParticleSys = wp.transform.Find ("Dummy002/WeaponRoot/Particle System").gameObject;
 
 		print(wpParticleSys.name);
-=======
-
 		forwardVec = cam.transform.forward;
->>>>>>> origin/master
+
         if (changeWp)
         {
             
         }
-<<<<<<< HEAD
-        
-        if (Input.GetMouseButtonDown(0))
-        {
-            amt.SetBool("Shoot", true);
-			wpParticleSys.SetActive (true);
-        }
-		if (Input.GetMouseButtonUp(0))
-        {
-            amt.SetBool("Shoot", false);
-			wpParticleSys.SetActive (false);
-            //shoot = false;
-        }
-=======
+
 		//print (Input.GetMouseButton (0) + " " + amt.GetBool ("Shoot"));
 		if (Input.GetMouseButton(0) && !amt.GetBool("Shoot")) {
 			//print ("down");
 			amt.SetBool ("Shoot", true);
+			wpParticleSys.SetActive (true);
 		}
 		if (!Input.GetMouseButton(0) && amt.GetBool("Shoot")) {
 			//print ("Up");
 			amt.SetBool ("Shoot", false);
+			wpParticleSys.SetActive (false);
 		}
 		if(Input.GetMouseButton(0)){
 			if(currTime == 0){
@@ -89,6 +72,5 @@ public class weapon : MonoBehaviour {
 		Rigidbody bulletRb = bul.GetComponent<Rigidbody>();
 		bulletRb.AddForce((forwardVec + new Vector3(Random.Range(-0.1f,.1f), Random.Range(-.1f,.1f), Random.Range(-.1f,.1f))) * velocity);
 		bullet.Add(bul);
->>>>>>> origin/master
 	}
 }
