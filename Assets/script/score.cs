@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class score : MonoBehaviour {
 	public int Score;
+	public int highScore;
 	Text text;
 	// Use this for initialization
 	void Start () {
 		Score = 1000;
+		highScore = Score;
 		changeScore ();
 	}
 	
@@ -19,11 +21,15 @@ public class score : MonoBehaviour {
 
 	public void incrScore(){
 		Score += 100;
+		highScore = Mathf.Max (highScore, Score);
+		print (highScore);
 		changeScore ();
 	}
 
 	public void decrScore(){
 		Score -= 200;
+		highScore = Mathf.Max (highScore, Score);
+		print (highScore);
 		changeScore ();
 	}
 

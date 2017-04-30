@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class flyGenerator : MonoBehaviour {
     public GameObject flyPerfab;
-    public float minGenTime = 3.0f;
-    public float maxGenTime = 10.0f;
+    public float minGenTime = 1.0f;
+    public float maxGenTime = 5.0f;
     float wait = 0;
 	// Use this for initialization
 	void Start () {
