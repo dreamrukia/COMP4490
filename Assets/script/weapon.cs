@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class weapon : MonoBehaviour {
+    public AudioSource fire;
     public GameObject wpPrefab;
 	public float bulletSpreadAngle;
 	GameObject wpParticleSys;
@@ -48,11 +49,13 @@ public class weapon : MonoBehaviour {
 			//print ("down");
 			amt.SetBool ("Shoot", true);
 			wpParticleSys.SetActive (true);
+            fire.Play();
 		}
 		if (!Input.GetMouseButton(0) && amt.GetBool("Shoot")) {
 			//print ("Up");
 			amt.SetBool ("Shoot", false);
 			wpParticleSys.SetActive (false);
+            fire.Stop();
 		}
 		if(Input.GetMouseButton(0)){
 			if(currTime == 0){
