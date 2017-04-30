@@ -11,7 +11,7 @@ public class bullet : MonoBehaviour {
 	void Awake(){
 		Destroy(gameObject, 5);
 	}
-	void OnCollisionExit(Collision collisionInfo){
+	void OnCollisionEnter(Collision collisionInfo){
 		if(collisionInfo.transform.CompareTag("Ground")){
 			Destroy(gameObject);
 		}

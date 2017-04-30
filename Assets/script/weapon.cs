@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class weapon : MonoBehaviour {
     public GameObject wpPrefab;
+	public float bulletSpreadAngle;
 	GameObject wpParticleSys;
 	public GameObject bulletPrefab;
 	List<GameObject> bullet;
@@ -34,7 +35,7 @@ public class weapon : MonoBehaviour {
 	void FixedUpdate () {
 		wpParticleSys = wp.transform.Find ("Dummy002/WeaponRoot/Particle System").gameObject;
 
-		print(wpParticleSys.name);
+		//print(wpParticleSys.name);
 		forwardVec = cam.transform.forward;
 
         if (changeWp)
@@ -66,11 +67,21 @@ public class weapon : MonoBehaviour {
 	private void shootBullet(){
 		//print("aaa");
 		GameObject bul = Instantiate(bulletPrefab) as GameObject;
+		RaycastHit hit;
+		if (Physics.Raycast (cam.transform.position, forwardVec.normalized, out hit, 10000)) {
+			if (hit.collider && hit.collider.gameObject.tag == "Original") {
+				hit.collider.gameObject.GetComponent<boxBreak>().broken();
+			}
+		}
+
+
 		//bul.transform.SetParent(cam.transform);
-		bul.transform.position = cam.transform.position + forwardVec.normalized * 5;
+		bul.transform.position = cam.transform.position + forwardVec.normalized * 3;
 		bul.transform.localEulerAngles = new Vector3(0,90f,90f);
 		Rigidbody bulletRb = bul.GetComponent<Rigidbody>();
-		bulletRb.AddForce((forwardVec + new Vector3(Random.Range(-0.1f,.1f), Random.Range(-.1f,.1f), Random.Range(-.1f,.1f))) * velocity);
+		bulletRb.AddForce((forwardVec + new Vector3(Random.Range(-bulletSpreadAngle,bulletSpreadAngle), Random.Range(-bulletSpreadAngle,bulletSpreadAngle), 
+			Random.Range(-bulletSpreadAngle,bulletSpreadAngle))) * velocity);
 		bullet.Add(bul);
+
 	}
 }
