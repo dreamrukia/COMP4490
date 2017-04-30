@@ -8,7 +8,7 @@ public class GameManage : MonoBehaviour {
     Text score;
 	// Use this for initialization
 	void Start () {
-        score = GameObject.Find("Score").GetComponent<Text>();
+        score = GameObject.Find("score").GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
