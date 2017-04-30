@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: 7f8c0f853fe3a044f92ce778961208b2
+timeCreated: 1493510489
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: box_Part_1
+    100004: box_Part_10
+    100006: box_Part_11
+    100008: box_Part_12
+    100010: box_Part_13
+    100012: box_Part_14
+    100014: box_Part_15
+    100016: box_Part_16
+    100018: box_Part_17
+    100020: box_Part_18
+    100022: box_Part_19
+    100024: box_Part_2
+    100026: box_Part_20
+    100028: box_Part_3
+    100030: box_Part_4
+    100032: box_Part_5
+    100034: box_Part_6
+    100036: box_Part_7
+    100038: box_Part_8
+    100040: box_Part_9
+    100042: box_top
+    100044: box_top_Part_1
+    100046: box_top_Part_10
+    100048: box_top_Part_2
+    100050: box_top_Part_3
+    100052: box_top_Part_4
+    100054: box_top_Part_5
+    100056: box_top_Part_6
+    100058: box_top_Part_7
+    100060: box_top_Part_8
+    100062: box_top_Part_9
+    400000: //RootNode
+    400002: box_Part_1
+    400004: box_Part_10
+    400006: box_Part_11
+    400008: box_Part_12
+    400010: box_Part_13
+    400012: box_Part_14
+    400014: box_Part_15
+    400016: box_Part_16
+    400018: box_Part_17
+    400020: box_Part_18
+    400022: box_Part_19
+    400024: box_Part_2
+    400026: box_Part_20
+    400028: box_Part_3
+    400030: box_Part_4
+    400032: box_Part_5
+    400034: box_Part_6
+    400036: box_Part_7
+    400038: box_Part_8
+    400040: box_Part_9
+    400042: box_top
+    400044: box_top_Part_1
+    400046: box_top_Part_10
+    400048: box_top_Part_2
+    400050: box_top_Part_3
+    400052: box_top_Part_4
+    400054: box_top_Part_5
+    400056: box_top_Part_6
+    400058: box_top_Part_7
+    400060: box_top_Part_8
+    400062: box_top_Part_9
+    2300000: //RootNode
+    2300002: box_Part_10
+    2300004: box_Part_11
+    2300006: box_Part_12
+    2300008: box_Part_13
+    2300010: box_Part_14
+    2300012: box_Part_15
+    2300014: box_Part_16
+    2300016: box_Part_17
+    2300018: box_Part_18
+    2300020: box_Part_19
+    2300022: box_Part_2
+    2300024: box_Part_20
+    2300026: box_Part_3
+    2300028: box_Part_4
+    2300030: box_Part_5
+    2300032: box_Part_6
+    2300034: box_Part_7
+    2300036: box_Part_8
+    2300038: box_Part_9
+    2300040: box_top
+    2300042: box_top_Part_1
+    2300044: box_top_Part_10
+    2300046: box_top_Part_2
+    2300048: box_top_Part_3
+    2300050: box_top_Part_4
+    2300052: box_top_Part_5
+    2300054: box_top_Part_6
+    2300056: box_top_Part_7
+    2300058: box_top_Part_8
+    2300060: box_top_Part_9
+    3300000: //RootNode
+    3300002: box_Part_10
+    3300004: box_Part_11
+    3300006: box_Part_12
+    3300008: box_Part_13
+    3300010: box_Part_14
+    3300012: box_Part_15
+    3300014: box_Part_16
+    3300016: box_Part_17
+    3300018: box_Part_18
+    3300020: box_Part_19
+    3300022: box_Part_2
+    3300024: box_Part_20
+    3300026: box_Part_3
+    3300028: box_Part_4
+    3300030: box_Part_5
+    3300032: box_Part_6
+    3300034: box_Part_7
+    3300036: box_Part_8
+    3300038: box_Part_9
+    3300040: box_top
+    3300042: box_top_Part_1
+    3300044: box_top_Part_10
+    3300046: box_top_Part_2
+    3300048: box_top_Part_3
+    3300050: box_top_Part_4
+    3300052: box_top_Part_5
+    3300054: box_top_Part_6
+    3300056: box_top_Part_7
+    3300058: box_top_Part_8
+    3300060: box_top_Part_9
+    4300000: box
+    4300002: box_top
+    4300004: box_top_Part_1
+    4300006: box_top_Part_2
+    4300008: box_top_Part_3
+    4300010: box_top_Part_4
+    4300012: box_top_Part_5
+    4300014: box_top_Part_6
+    4300016: box_top_Part_7
+    4300018: box_top_Part_8
+    4300020: box_top_Part_9
+    4300022: box_top_Part_10
+    4300024: box_Part_2
+    4300026: box_Part_3
+    4300028: box_Part_4
+    4300030: box_Part_5
+    4300032: box_Part_6
+    4300034: box_Part_7
+    4300036: box_Part_8
+    4300038: box_Part_9
+    4300040: box_Part_10
+    4300042: box_Part_11
+    4300044: box_Part_12
+    4300046: box_Part_13
+    4300048: box_Part_14
+    4300050: box_Part_15
+    4300052: box_Part_16
+    4300054: box_Part_17
+    4300056: box_Part_18
+    4300058: box_Part_19
+    4300060: box_Part_20
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

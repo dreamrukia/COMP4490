@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: f325e87fe5b04b14e9904c2b8934f2f8
+timeCreated: 1493510490
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: rockSnailFossil_LOD0_Part_1
+    100004: rockSnailFossil_LOD0_Part_10
+    100006: rockSnailFossil_LOD0_Part_11
+    100008: rockSnailFossil_LOD0_Part_12
+    100010: rockSnailFossil_LOD0_Part_13
+    100012: rockSnailFossil_LOD0_Part_14
+    100014: rockSnailFossil_LOD0_Part_15
+    100016: rockSnailFossil_LOD0_Part_16
+    100018: rockSnailFossil_LOD0_Part_17
+    100020: rockSnailFossil_LOD0_Part_18
+    100022: rockSnailFossil_LOD0_Part_19
+    100024: rockSnailFossil_LOD0_Part_2
+    100026: rockSnailFossil_LOD0_Part_20
+    100028: rockSnailFossil_LOD0_Part_3
+    100030: rockSnailFossil_LOD0_Part_4
+    100032: rockSnailFossil_LOD0_Part_5
+    100034: rockSnailFossil_LOD0_Part_6
+    100036: rockSnailFossil_LOD0_Part_7
+    100038: rockSnailFossil_LOD0_Part_8
+    100040: rockSnailFossil_LOD0_Part_9
+    400000: //RootNode
+    400002: rockSnailFossil_LOD0_Part_1
+    400004: rockSnailFossil_LOD0_Part_10
+    400006: rockSnailFossil_LOD0_Part_11
+    400008: rockSnailFossil_LOD0_Part_12
+    400010: rockSnailFossil_LOD0_Part_13
+    400012: rockSnailFossil_LOD0_Part_14
+    400014: rockSnailFossil_LOD0_Part_15
+    400016: rockSnailFossil_LOD0_Part_16
+    400018: rockSnailFossil_LOD0_Part_17
+    400020: rockSnailFossil_LOD0_Part_18
+    400022: rockSnailFossil_LOD0_Part_19
+    400024: rockSnailFossil_LOD0_Part_2
+    400026: rockSnailFossil_LOD0_Part_20
+    400028: rockSnailFossil_LOD0_Part_3
+    400030: rockSnailFossil_LOD0_Part_4
+    400032: rockSnailFossil_LOD0_Part_5
+    400034: rockSnailFossil_LOD0_Part_6
+    400036: rockSnailFossil_LOD0_Part_7
+    400038: rockSnailFossil_LOD0_Part_8
+    400040: rockSnailFossil_LOD0_Part_9
+    2300000: //RootNode
+    2300002: rockSnailFossil_LOD0_Part_1
+    2300004: rockSnailFossil_LOD0_Part_10
+    2300006: rockSnailFossil_LOD0_Part_11
+    2300008: rockSnailFossil_LOD0_Part_12
+    2300010: rockSnailFossil_LOD0_Part_13
+    2300012: rockSnailFossil_LOD0_Part_14
+    2300014: rockSnailFossil_LOD0_Part_15
+    2300016: rockSnailFossil_LOD0_Part_16
+    2300018: rockSnailFossil_LOD0_Part_17
+    2300020: rockSnailFossil_LOD0_Part_18
+    2300022: rockSnailFossil_LOD0_Part_19
+    2300024: rockSnailFossil_LOD0_Part_2
+    2300026: rockSnailFossil_LOD0_Part_20
+    2300028: rockSnailFossil_LOD0_Part_3
+    2300030: rockSnailFossil_LOD0_Part_4
+    2300032: rockSnailFossil_LOD0_Part_5
+    2300034: rockSnailFossil_LOD0_Part_6
+    2300036: rockSnailFossil_LOD0_Part_7
+    2300038: rockSnailFossil_LOD0_Part_8
+    2300040: rockSnailFossil_LOD0_Part_9
+    3300000: //RootNode
+    3300002: rockSnailFossil_LOD0_Part_1
+    3300004: rockSnailFossil_LOD0_Part_10
+    3300006: rockSnailFossil_LOD0_Part_11
+    3300008: rockSnailFossil_LOD0_Part_12
+    3300010: rockSnailFossil_LOD0_Part_13
+    3300012: rockSnailFossil_LOD0_Part_14
+    3300014: rockSnailFossil_LOD0_Part_15
+    3300016: rockSnailFossil_LOD0_Part_16
+    3300018: rockSnailFossil_LOD0_Part_17
+    3300020: rockSnailFossil_LOD0_Part_18
+    3300022: rockSnailFossil_LOD0_Part_19
+    3300024: rockSnailFossil_LOD0_Part_2
+    3300026: rockSnailFossil_LOD0_Part_20
+    3300028: rockSnailFossil_LOD0_Part_3
+    3300030: rockSnailFossil_LOD0_Part_4
+    3300032: rockSnailFossil_LOD0_Part_5
+    3300034: rockSnailFossil_LOD0_Part_6
+    3300036: rockSnailFossil_LOD0_Part_7
+    3300038: rockSnailFossil_LOD0_Part_8
+    3300040: rockSnailFossil_LOD0_Part_9
+    4300000: rockSnailFossil_LOD0
+    4300002: rockSnailFossil_LOD0_Part_1
+    4300004: rockSnailFossil_LOD0_Part_2
+    4300006: rockSnailFossil_LOD0_Part_3
+    4300008: rockSnailFossil_LOD0_Part_4
+    4300010: rockSnailFossil_LOD0_Part_5
+    4300012: rockSnailFossil_LOD0_Part_6
+    4300014: rockSnailFossil_LOD0_Part_7
+    4300016: rockSnailFossil_LOD0_Part_8
+    4300018: rockSnailFossil_LOD0_Part_9
+    4300020: rockSnailFossil_LOD0_Part_10
+    4300022: rockSnailFossil_LOD0_Part_11
+    4300024: rockSnailFossil_LOD0_Part_12
+    4300026: rockSnailFossil_LOD0_Part_13
+    4300028: rockSnailFossil_LOD0_Part_14
+    4300030: rockSnailFossil_LOD0_Part_15
+    4300032: rockSnailFossil_LOD0_Part_16
+    4300034: rockSnailFossil_LOD0_Part_17
+    4300036: rockSnailFossil_LOD0_Part_18
+    4300038: rockSnailFossil_LOD0_Part_19
+    4300040: rockSnailFossil_LOD0_Part_20
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
