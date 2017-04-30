@@ -10,7 +10,6 @@ public class move : MonoBehaviour {
 	public float jumpVelocity;
 	public float boundDistance;
 
-	public GameObject skybox;
 	// Use this for initialization
 	void Start () {
 		//skybox = GameObject.Find ("Skyball_WithCap");
@@ -35,7 +34,6 @@ public class move : MonoBehaviour {
 		Vector3 camUp = cam.transform.up;
 		face.y = 0.0f;
 		Rigidbody rb = GetComponent<Rigidbody> ();
-		skybox.GetComponent<Transform> ().position = cam.GetComponent<Transform>().position;
         //print(canMove(face));
 		if (Input.GetKey (KeyCode.W) && canMove(face)) {
 			rb.position += face * speed;

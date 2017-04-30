@@ -14,7 +14,7 @@ public class flyGenerator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        print(wait);
+        //print(wait);
         if (wait <= 0)
         {
             wait = Random.Range(minGenTime * 60, maxGenTime * 60);

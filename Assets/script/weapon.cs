@@ -72,7 +72,7 @@ public class weapon : MonoBehaviour {
 		GameObject bul = Instantiate(bulletPrefab) as GameObject;
 		RaycastHit hit;
 		if (Physics.Raycast (cam.transform.position, forwardVec.normalized, out hit, 10000)) {
-			if (hit.collider && hit.collider.gameObject.tag == "Original") {
+			if (hit.collider && (hit.collider.gameObject.tag == "Original" || hit.collider.gameObject.tag == "fly")) {
 				hit.collider.gameObject.GetComponent<boxBreak>().broken();
 			}
 		}
